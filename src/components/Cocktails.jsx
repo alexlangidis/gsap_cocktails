@@ -4,14 +4,17 @@ import gsap from "gsap";
 
 const Cocktails = () => {
   useGSAP(() => {
-    const parallaxTimeline = gsap.timeline({
-      scrollTrigger: {
-        trigger: "#cocktails",
-        start: "top 30%",
-        end: "bottom 80%",
-        scrub: true,
+    const parallaxTimeline = gsap.timeline(
+      {
+        scrollTrigger: {
+          trigger: "#cocktails",
+          start: "top 35%",
+          end: "bottom 80%",
+          scrub: true,
+        },
       },
-    });
+      [],
+    );
 
     parallaxTimeline
       .from("#c-left-leaf", {
